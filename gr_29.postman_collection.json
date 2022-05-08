@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "b7fa8884-f39e-468f-86b5-5d593de81cdb",
+		"name": "gr_29",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "the_first",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// pm.test(\"Status code is 200\", function () {\r",
+							"//     pm.response.to.have.status(200);\r",
+							"// });\r",
+							"\r",
+							"const jsonData = pm.response.json();\r",
+							"\r",
+							"let person = {\r",
+							"    \"age\": \"20\",\r",
+							"    \"family\": {\r",
+							"        \"children\": [\r",
+							"            [\r",
+							"                \"Alex\",\r",
+							"                24\r",
+							"            ],\r",
+							"            [\r",
+							"                \"Kate\",\r",
+							"                12\r",
+							"            ]\r",
+							"        ],\r",
+							"        \"u_salary_1_5_year\": 6000\r",
+							"    },\r",
+							"    \"name\": \"Alex\",\r",
+							"    \"salary\": 1500\r",
+							"}\r",
+							"\r",
+							"let item_1 = \"Alex\"\r",
+							"\r",
+							"pm.test(\"item_1 Test\" , function () {\r",
+							"\r",
+							"    pm.expect(item_1).to.deep.equal(\"Alex\")\r",
+							"    // pm.expect(tt2.salary).to.eql(1000)\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"pm.test(\"item_4 Person\", function (){\r",
+							"\r",
+							"pm.expect(person).to.have.property(\"name\")\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"item_5 Person\", function (){\r",
+							"\r",
+							"pm.expect(person).to.deep.include({\"salary\": 1500})\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"pm.test(\"item_6 Person\", function (){\r",
+							"\r",
+							"pm.expect(person.family.children[1]).to.deep.include(\"Kate\")\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"pm.test(\"item_7 Person\", function (){\r",
+							"\r",
+							"pm.expect(person.family.children[1][1]).to.be.a(\"Number\")\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"pm.test(\"item_8 Person\", function (){\r",
+							"\r",
+							"pm.expect(person.family.children[1]).to.be.an(\"Array\").that.include(12)\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1500",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Alex",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "\n/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/get_test_user",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_test_user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
