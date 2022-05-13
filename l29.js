@@ -13,6 +13,8 @@
 //console.log(result)
 //console.log(result_2)
 
+// simple function:
+
 let t = true
 let f = false
 
