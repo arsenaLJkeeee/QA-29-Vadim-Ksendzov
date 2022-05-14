@@ -1,0 +1,13 @@
+ID	Priority	"Requirement
+number"	Module	Sub-module	Summary	Expected result	Pass	Fail
+								
+#1	Highest	"1
+2
+5"	Inbox	Send	"Inbox, Sending SMS message on a valid number
+1. Click ""New"" button
+2. Insert valid ten-digit number in the ""Name or Phone Number"" field
+3. Printing a text message with 1-160 characters in the ""Your message..."" field
+4. Click ""Send SMS"" button"	"1. Field with Phone number or Name of contact appears
+2. Number has been inserted and cursor moved to ""Your Message"" field
+3. The text message with 1-160 characters has been printed
+4. Notification ""SMS has been sent"" shows up and 1 credit withdrew"		
