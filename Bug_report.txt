@@ -1,0 +1,16 @@
+ID - 1
+Summary:
+Application is crushing when button "5" is clicked at the main screen
+
+STR:
+1. Clicking button "5"
+
+Expected result: Nothing happens
+
+Actual result: Application is crushing
+
+Severity:Critical
+
+Priority:High
+
+
