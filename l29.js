@@ -15,8 +15,8 @@
 
 // simple function:
 
-let t = true
-let f = false
+const t = true
+const f = false
 
 if (f) {
     let apples = 3+5
