@@ -13,7 +13,7 @@
 //console.log(result)
 //console.log(result_2)
 
-// simple function:
+// simple functions:
 
 const t = true
 const f = false
