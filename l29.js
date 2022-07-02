@@ -3,7 +3,6 @@
 
 //let yolochka_name = "Zelyonaya"
 
-
 //let result = yolochka4 + yolochka6;
 
 //let result_2 = yolochka6 + yolochka_name;
